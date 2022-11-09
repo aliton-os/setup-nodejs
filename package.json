@@ -1,0 +1,31 @@
+{
+  "name": "setup-nodejs",
+  "version": "0.0.1",
+  "description": "projeto de demonstracao",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aliton-os/setup-nodejs.git"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "demo"
+  ],
+  "author": "Aliton Oliveira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aliton-os/setup-nodejs/issues"
+  },
+  "homepage": "https://github.com/aliton-os/setup-nodejs#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "jest": "^29.3.1"
+  }
+}

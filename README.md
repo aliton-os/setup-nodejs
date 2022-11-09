@@ -43,5 +43,22 @@ Finalizado os primeiros testes, deu-se início a automatização dos testes com 
 -- deployment.yml
 - Criar uma nova branch para...: `git checkout -b feature/github-actions`
 - git add . (ANTES NÃO ESQUECER DE CRIAR O ARQUIVO **.gitignore**)
+-- caso tenha esquecido do arquivo **.gitignore**, aplicar o comando git rm -r node_modules/
 - git commit -am "add workflows"
 - git push origin feature/github-actions
+
+> Por alguma razão, a branch **develop** não foi criada até então. Por essa razão não foi possível `Abrir um pull Request`. A solução foi criar uma nova branch chamada **develop** no site github.com
+
+Após realizar uma `Pull Request` da branch **feature/github-actions** para a **develop** e mergir, pode-se deletar a branch **feature/github-actions**.
+
+# Estando tudo certo aqui aqui...
+
+Pode-se preparar a release e o merge para a branch **main**.
+
+- git checkout -b release/v1
+- mudar campo version do arquivo package.json
+- criar um arquivo CHANGELOG.md para registrar as mudanças
+- git add CHANGELOG.md
+- git commit CHANGELOG.md -m "add changelog"
+- npm install (para atualizar o package.json)
+- git commit package* -m "bump version"

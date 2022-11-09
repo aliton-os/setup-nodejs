@@ -42,5 +42,6 @@ Finalizado os primeiros testes, deu-se início a automatização dos testes com 
 -- test.yml
 -- deployment.yml
 - Criar uma nova branch para...: `git checkout -b feature/github-actions`
-- git add .
+- git add . (ANTES NÃO ESQUECER DE CRIAR O ARQUIVO **.gitignore**)
 - git commit -am "add workflows"
+- git push origin feature/github-actions

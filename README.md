@@ -62,3 +62,11 @@ Pode-se preparar a release e o merge para a branch **main**.
 - git commit CHANGELOG.md -m "add changelog"
 - npm install (para atualizar o package.json)
 - git commit package* -m "bump version"
+- git push origin release/v1
+
+
+> Por alguma razão, `node_modules` continua sendo adicionada ao index do github, mesmo com o arquivo **.gitignore**. Mais uma tentativa de remover `node_modules` com os comandos abaixo:
+
+1. git rm -r --cached node_modules
+2. git commit -m 'Remove the now ignored directory node_modules'
+3. git push origin release/v1
